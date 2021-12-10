@@ -25,7 +25,7 @@ struct CardView: View {
                                 .scaledToFill()
                                 .frame(width:100, height: 80)
                                 .cornerRadius(9)
-                            
+                        
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                        

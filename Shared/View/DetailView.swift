@@ -11,27 +11,35 @@ struct DetailView: View {
     var memory: Memory
     var body: some View {
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
         List{
-            Text("Date :  ") + Text(memory.timestamp ?? Date(),style: .date)
-             
-            
             if let image = memory.image,!image.isEmpty{
-                
                 Section{
-                    
                     Image(uiImage: UIImage(data: image)!)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .cornerRadius(10)
                         .listRowBackground(Color.clear)
+                   
                     
-                } header: {
-                    Text("Memorable Pic")
-                        .fontWeight(.bold)
-                        .italic()
                 }
                 .listRowBackground(Color.clear)
-
+            }
+            Section {
+                Text(memory.timestamp ?? Date(),style: .date)
+                
+            } header: {
+                Text("Date")
+                    .fontWeight(.bold)
+                    .italic()
             }
             
             
@@ -46,11 +54,11 @@ struct DetailView: View {
                     .italic()
             }
             
-
-
+            
+            
         }
         .listStyle(InsetGroupedListStyle())
         .navigationTitle(Text(memory.title ?? ""))
-    
+        
     }
 }
