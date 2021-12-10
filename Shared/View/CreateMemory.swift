@@ -43,6 +43,7 @@ struct CreateMemory: View{
                 }
                 
                 
+                
                 if memory == nil{
                     
                     Section {
@@ -56,14 +57,14 @@ struct CreateMemory: View{
                         Text("Moment Happened")
                             .fontWeight(.bold)
                             .italic()
-                            
+                        
                     }
                     
                 }
                 
                 
                 Section {
-
+                    
                     if isImage{
                         
                         Button {
@@ -74,11 +75,18 @@ struct CreateMemory: View{
                         } label: {
                             
                             ZStack{
-                            
+                                
                                 if imageData.isEmpty{
-                                    Image(systemName: "plus")
-                                        .font(.largeTitle)
-                                        .foregroundColor(.primary)
+                                        Image(systemName: "plus")
+                                            .font(.largeTitle)
+                                            .frame(width: 100, height: 100, alignment: .center)
+                                            .background(Color.white)
+                                            .cornerRadius(10)
+                                        
+                           
+                                            .foregroundColor(.primary)
+                                         
+                                         
                                 }
                                 else{
                                     Image(uiImage: UIImage(data: imageData)!)
@@ -93,7 +101,7 @@ struct CreateMemory: View{
                             .padding(.top,8)
                         }
                         .frame(maxWidth: .infinity,alignment: .center)
-
+                        
                     }
                     
                 } header: {
@@ -105,13 +113,13 @@ struct CreateMemory: View{
                         
                     }
                 }
-                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                .listRowBackground(Color.clear)
                 
                 Section {
                     
                     TextEditor(text: $content)
                         .background(
-                        
+                            
                             Text("....")
                                 .foregroundColor(.gray)
                                 .opacity(content == "" ? 0.7 : 0)
@@ -127,7 +135,7 @@ struct CreateMemory: View{
                         .italic()
                     
                 }
-
+                
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Save Your Memories")

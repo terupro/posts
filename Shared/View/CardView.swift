@@ -16,19 +16,40 @@ struct CardView: View {
         
         NavigationLink(destination: DetailView(memory: memory)) {
             
-            VStack(alignment: .leading,spacing: 10){
+            HStack(alignment: .center,spacing: 10) {
+                ZStack{
+                    if let image = memory.image,!image.isEmpty{
+                        Section {
+                            Image(uiImage: UIImage(data: image)!)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width:100, height: 80)
+                                .cornerRadius(9)
+                            
+                        }
+                        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                       
+                    }
+                } //: ZSTACK
                 
-                Text(memory.title ?? "")
-                    .font(.title3)
-                    .fontWeight(.bold)
-                
-                Rectangle()
-                      .foregroundColor(Color.primary.opacity(0.05))
-                      .frame(height: 2)
-                
-                Text(memory.timestamp ?? Date(),style: .date)
-                    .font(.system(.footnote, design: .default))
-            }
+                VStack(alignment: .leading,spacing: 5){
+                    
+                    Text(memory.title ?? "")
+                        .font(.system(.callout, design: .default))
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
+                    Rectangle()
+                          .foregroundColor(Color.primary.opacity(0.05))
+                          .frame(height: 2)
+                    Text(memory.timestamp ?? Date(),style: .date)
+                        .font(.system(.footnote, design: .default))
+                        .foregroundColor(Color.primary.opacity(0.5))
+                        .italic()
+        
+                    
+                    
+                } //: VSTACK
+            } //: VSTACK
             .foregroundColor(.primary)
             .padding()
             .frame(maxWidth: .infinity,alignment: .leading)
@@ -36,6 +57,7 @@ struct CardView: View {
             .cornerRadius(10)
             .frame(maxWidth: .infinity,alignment: .leading)
             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
+            
         }
     }
 }

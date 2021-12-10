@@ -17,20 +17,20 @@ struct DetailView: View {
             
             if let image = memory.image,!image.isEmpty{
                 
-                Section {
+                Section{
                     
                     Image(uiImage: UIImage(data: image)!)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(height: 250)
                         .cornerRadius(10)
+                        .listRowBackground(Color.clear)
                     
                 } header: {
                     Text("Memorable Pic")
                         .fontWeight(.bold)
                         .italic()
                 }
-                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                .listRowBackground(Color.clear)
 
             }
             
