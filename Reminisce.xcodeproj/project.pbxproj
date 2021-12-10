@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD6FC885271B02AE0021E1B2 /* CreateMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC884271B02AE0021E1B2 /* CreateMemory.swift */; };
+		AD6FC886271B02AE0021E1B2 /* CreateMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC884271B02AE0021E1B2 /* CreateMemory.swift */; };
+		AD6FC888271B02C50021E1B2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC887271B02C50021E1B2 /* ImagePicker.swift */; };
+		AD6FC889271B02C50021E1B2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC887271B02C50021E1B2 /* ImagePicker.swift */; };
+		AD6FC88B271B061A0021E1B2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC88A271B061A0021E1B2 /* CardView.swift */; };
+		AD6FC88C271B061A0021E1B2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC88A271B061A0021E1B2 /* CardView.swift */; };
+		AD6FC88E271B06410021E1B2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC88D271B06410021E1B2 /* DetailView.swift */; };
+		AD6FC88F271B06410021E1B2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC88D271B06410021E1B2 /* DetailView.swift */; };
+		AD6FC891271B08560021E1B2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC890271B08560021E1B2 /* BlurView.swift */; };
+		AD6FC892271B08560021E1B2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FC890271B08560021E1B2 /* BlurView.swift */; };
+		ADA957E6271B6413009800D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA957E5271B6413009800D6 /* HomeViewModel.swift */; };
+		ADEA521826C444D60093C3B5 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA521726C444D60093C3B5 /* Tests_iOS.swift */; };
+		ADEA522226C444D60093C3B5 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA522126C444D60093C3B5 /* Tests_macOS.swift */; };
+		ADEA522326C444D60093C3B5 /* Reminisce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADEA51FE26C444D50093C3B5 /* Reminisce.xcdatamodeld */; };
+		ADEA522426C444D60093C3B5 /* Reminisce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADEA51FE26C444D50093C3B5 /* Reminisce.xcdatamodeld */; };
+		ADEA522526C444D60093C3B5 /* ReminisceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA520026C444D50093C3B5 /* ReminisceApp.swift */; };
+		ADEA522626C444D60093C3B5 /* ReminisceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA520026C444D50093C3B5 /* ReminisceApp.swift */; };
+		ADEA522726C444D60093C3B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA520126C444D50093C3B5 /* ContentView.swift */; };
+		ADEA522826C444D60093C3B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA520126C444D50093C3B5 /* ContentView.swift */; };
+		ADEA522926C444D60093C3B5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA520226C444D50093C3B5 /* Persistence.swift */; };
+		ADEA522A26C444D60093C3B5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA520226C444D50093C3B5 /* Persistence.swift */; };
+		ADEA522B26C444D60093C3B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEA520326C444D60093C3B5 /* Assets.xcassets */; };
+		ADEA522C26C444D60093C3B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEA520326C444D60093C3B5 /* Assets.xcassets */; };
+		ADEA525A26C447900093C3B5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA525926C447900093C3B5 /* Home.swift */; };
+		ADEA525B26C447900093C3B5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA525926C447900093C3B5 /* Home.swift */; };
+		ADEA525F26C44AC90093C3B5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEA525E26C44AC90093C3B5 /* CloudKit.framework */; };
+		DE5295C12762D537000574B3 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5295C02762D537000574B3 /* MotionAnimationView.swift */; };
+		DE5295C22762D537000574B3 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5295C02762D537000574B3 /* MotionAnimationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADEA521426C444D60093C3B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADEA51F926C444D50093C3B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADEA520726C444D60093C3B5;
+			remoteInfo = "Reminisce (iOS)";
+		};
+		ADEA521E26C444D60093C3B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADEA51F926C444D50093C3B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADEA520D26C444D60093C3B5;
+			remoteInfo = "Reminisce (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD6FC884271B02AE0021E1B2 /* CreateMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemory.swift; sourceTree = "<group>"; };
+		AD6FC887271B02C50021E1B2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		AD6FC88A271B061A0021E1B2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AD6FC88D271B06410021E1B2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AD6FC890271B08560021E1B2 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		ADA957E5271B6413009800D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		ADEA51FF26C444D50093C3B5 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		ADEA520026C444D50093C3B5 /* ReminisceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminisceApp.swift; sourceTree = "<group>"; };
+		ADEA520126C444D50093C3B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADEA520226C444D50093C3B5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ADEA520326C444D60093C3B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADEA520826C444D60093C3B5 /* Reminisce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminisce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA520E26C444D60093C3B5 /* Reminisce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminisce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA521326C444D60093C3B5 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA521726C444D60093C3B5 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		ADEA521D26C444D60093C3B5 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA522126C444D60093C3B5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		ADEA525926C447900093C3B5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		ADEA525C26C44AC40093C3B5 /* Reminisce (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Reminisce (iOS).entitlements"; sourceTree = "<group>"; };
+		ADEA525E26C44AC90093C3B5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		ADEA526026C44B040093C3B5 /* Reminisce--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Reminisce--iOS--Info.plist"; sourceTree = "<group>"; };
+		DE5295C02762D537000574B3 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADEA520526C444D60093C3B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA525F26C44AC90093C3B5 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA520B26C444D60093C3B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA521026C444D60093C3B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA521A26C444D60093C3B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADA957E4271B640B009800D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADA957E5271B6413009800D6 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADEA51F826C444D50093C3B5 = {
+			isa = PBXGroup;
+			children = (
+				ADEA526026C44B040093C3B5 /* Reminisce--iOS--Info.plist */,
+				ADEA525C26C44AC40093C3B5 /* Reminisce (iOS).entitlements */,
+				ADEA51FD26C444D50093C3B5 /* Shared */,
+				ADEA521626C444D60093C3B5 /* Tests iOS */,
+				ADEA522026C444D60093C3B5 /* Tests macOS */,
+				ADEA520926C444D60093C3B5 /* Products */,
+				ADEA525D26C44AC90093C3B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADEA51FD26C444D50093C3B5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ADA957E4271B640B009800D6 /* ViewModel */,
+				ADEA525626C4477E0093C3B5 /* View */,
+				ADEA520026C444D50093C3B5 /* ReminisceApp.swift */,
+				ADEA520126C444D50093C3B5 /* ContentView.swift */,
+				ADEA520226C444D50093C3B5 /* Persistence.swift */,
+				ADEA520326C444D60093C3B5 /* Assets.xcassets */,
+				ADEA51FE26C444D50093C3B5 /* Reminisce.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ADEA520926C444D60093C3B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA520826C444D60093C3B5 /* Reminisce.app */,
+				ADEA520E26C444D60093C3B5 /* Reminisce.app */,
+				ADEA521326C444D60093C3B5 /* Tests iOS.xctest */,
+				ADEA521D26C444D60093C3B5 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADEA521626C444D60093C3B5 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA521726C444D60093C3B5 /* Tests_iOS.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		ADEA522026C444D60093C3B5 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA522126C444D60093C3B5 /* Tests_macOS.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		ADEA525626C4477E0093C3B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA525926C447900093C3B5 /* Home.swift */,
+				AD6FC884271B02AE0021E1B2 /* CreateMemory.swift */,
+				AD6FC887271B02C50021E1B2 /* ImagePicker.swift */,
+				AD6FC88A271B061A0021E1B2 /* CardView.swift */,
+				AD6FC88D271B06410021E1B2 /* DetailView.swift */,
+				AD6FC890271B08560021E1B2 /* BlurView.swift */,
+				DE5295C02762D537000574B3 /* MotionAnimationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADEA525D26C44AC90093C3B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA525E26C44AC90093C3B5 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADEA520726C444D60093C3B5 /* Reminisce (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEA522F26C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Reminisce (iOS)" */;
+			buildPhases = (
+				ADEA520426C444D60093C3B5 /* Sources */,
+				ADEA520526C444D60093C3B5 /* Frameworks */,
+				ADEA520626C444D60093C3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reminisce (iOS)";
+			productName = "Reminisce (iOS)";
+			productReference = ADEA520826C444D60093C3B5 /* Reminisce.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADEA520D26C444D60093C3B5 /* Reminisce (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEA523226C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Reminisce (macOS)" */;
+			buildPhases = (
+				ADEA520A26C444D60093C3B5 /* Sources */,
+				ADEA520B26C444D60093C3B5 /* Frameworks */,
+				ADEA520C26C444D60093C3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reminisce (macOS)";
+			productName = "Reminisce (macOS)";
+			productReference = ADEA520E26C444D60093C3B5 /* Reminisce.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADEA521226C444D60093C3B5 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEA523526C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				ADEA520F26C444D60093C3B5 /* Sources */,
+				ADEA521026C444D60093C3B5 /* Frameworks */,
+				ADEA521126C444D60093C3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADEA521526C444D60093C3B5 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = ADEA521326C444D60093C3B5 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ADEA521C26C444D60093C3B5 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEA523826C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				ADEA521926C444D60093C3B5 /* Sources */,
+				ADEA521A26C444D60093C3B5 /* Frameworks */,
+				ADEA521B26C444D60093C3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADEA521F26C444D60093C3B5 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = ADEA521D26C444D60093C3B5 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADEA51F926C444D50093C3B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					ADEA520726C444D60093C3B5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					ADEA520D26C444D60093C3B5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					ADEA521226C444D60093C3B5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ADEA520726C444D60093C3B5;
+					};
+					ADEA521C26C444D60093C3B5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ADEA520D26C444D60093C3B5;
+					};
+				};
+			};
+			buildConfigurationList = ADEA51FC26C444D50093C3B5 /* Build configuration list for PBXProject "Reminisce" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADEA51F826C444D50093C3B5;
+			productRefGroup = ADEA520926C444D60093C3B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADEA520726C444D60093C3B5 /* Reminisce (iOS) */,
+				ADEA520D26C444D60093C3B5 /* Reminisce (macOS) */,
+				ADEA521226C444D60093C3B5 /* Tests iOS */,
+				ADEA521C26C444D60093C3B5 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADEA520626C444D60093C3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA522B26C444D60093C3B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA520C26C444D60093C3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA522C26C444D60093C3B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA521126C444D60093C3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA521B26C444D60093C3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADEA520426C444D60093C3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6FC885271B02AE0021E1B2 /* CreateMemory.swift in Sources */,
+				ADA957E6271B6413009800D6 /* HomeViewModel.swift in Sources */,
+				AD6FC88E271B06410021E1B2 /* DetailView.swift in Sources */,
+				ADEA522326C444D60093C3B5 /* Reminisce.xcdatamodeld in Sources */,
+				ADEA522926C444D60093C3B5 /* Persistence.swift in Sources */,
+				AD6FC888271B02C50021E1B2 /* ImagePicker.swift in Sources */,
+				ADEA525A26C447900093C3B5 /* Home.swift in Sources */,
+				ADEA522526C444D60093C3B5 /* ReminisceApp.swift in Sources */,
+				AD6FC891271B08560021E1B2 /* BlurView.swift in Sources */,
+				DE5295C12762D537000574B3 /* MotionAnimationView.swift in Sources */,
+				AD6FC88B271B061A0021E1B2 /* CardView.swift in Sources */,
+				ADEA522726C444D60093C3B5 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA520A26C444D60093C3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6FC886271B02AE0021E1B2 /* CreateMemory.swift in Sources */,
+				AD6FC88F271B06410021E1B2 /* DetailView.swift in Sources */,
+				ADEA522426C444D60093C3B5 /* Reminisce.xcdatamodeld in Sources */,
+				ADEA522A26C444D60093C3B5 /* Persistence.swift in Sources */,
+				AD6FC889271B02C50021E1B2 /* ImagePicker.swift in Sources */,
+				ADEA525B26C447900093C3B5 /* Home.swift in Sources */,
+				ADEA522626C444D60093C3B5 /* ReminisceApp.swift in Sources */,
+				AD6FC892271B08560021E1B2 /* BlurView.swift in Sources */,
+				DE5295C22762D537000574B3 /* MotionAnimationView.swift in Sources */,
+				AD6FC88C271B061A0021E1B2 /* CardView.swift in Sources */,
+				ADEA522826C444D60093C3B5 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA520F26C444D60093C3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA521826C444D60093C3B5 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEA521926C444D60093C3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEA522226C444D60093C3B5 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADEA521526C444D60093C3B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADEA520726C444D60093C3B5 /* Reminisce (iOS) */;
+			targetProxy = ADEA521426C444D60093C3B5 /* PBXContainerItemProxy */;
+		};
+		ADEA521F26C444D60093C3B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADEA520D26C444D60093C3B5 /* Reminisce (macOS) */;
+			targetProxy = ADEA521E26C444D60093C3B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADEA522D26C444D60093C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADEA522E26C444D60093C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ADEA523026C444D60093C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Reminisce (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Z4DKWZ4UK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Reminisce--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Posts;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.terupro.Posts;
+				PRODUCT_NAME = Reminisce;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADEA523126C444D60093C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Reminisce (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Z4DKWZ4UK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Reminisce--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Posts;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.terupro.Posts;
+				PRODUCT_NAME = Reminisce;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADEA523326C444D60093C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Reminisce;
+				PRODUCT_NAME = Reminisce;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ADEA523426C444D60093C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kavsoft.Reminisce;
+				PRODUCT_NAME = Reminisce;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ADEA523626C444D60093C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Reminisce (iOS)";
+			};
+			name = Debug;
+		};
+		ADEA523726C444D60093C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Reminisce (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADEA523926C444D60093C3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Reminisce (macOS)";
+			};
+			name = Debug;
+		};
+		ADEA523A26C444D60093C3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kavsoft.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Reminisce (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADEA51FC26C444D50093C3B5 /* Build configuration list for PBXProject "Reminisce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA522D26C444D60093C3B5 /* Debug */,
+				ADEA522E26C444D60093C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADEA522F26C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Reminisce (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA523026C444D60093C3B5 /* Debug */,
+				ADEA523126C444D60093C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADEA523226C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Reminisce (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA523326C444D60093C3B5 /* Debug */,
+				ADEA523426C444D60093C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADEA523526C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA523626C444D60093C3B5 /* Debug */,
+				ADEA523726C444D60093C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADEA523826C444D60093C3B5 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEA523926C444D60093C3B5 /* Debug */,
+				ADEA523A26C444D60093C3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADEA51FE26C444D50093C3B5 /* Reminisce.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADEA51FF26C444D50093C3B5 /* Shared.xcdatamodel */,
+			);
+			currentVersion = ADEA51FF26C444D50093C3B5 /* Shared.xcdatamodel */;
+			path = Reminisce.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADEA51F926C444D50093C3B5 /* Project object */;
+}
