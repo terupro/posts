@@ -12,6 +12,7 @@ class HomeViewModel: ObservableObject {
     // Lock Status
     @Published var showAlert: Bool = false
     @Published var alertMsg: String = ""
+    
 
     @Published var isUnlocked: Bool = false
     

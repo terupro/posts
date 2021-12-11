@@ -43,7 +43,6 @@ struct Home: View {
                                 context.delete(memory)
                                 try? context.save()
                             }
-                            
                             Button("Edit"){
                                 currentMemory = memory
                                 createMemory.toggle()

@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import KeyboardObserving
 
 struct CreateMemory: View{
     
     @Binding var close: Bool
     @Binding var memory: Memory?
     @Environment(\.managedObjectContext) var context
+    @Environment(\.colorScheme) var scheme
     
     @State var title = ""
     @State var content = ""
@@ -32,12 +34,12 @@ struct CreateMemory: View{
             List{
                 
                 Section {
-                    
+
                     TextField("....", text: $title)
-                    
+             
                 } header: {
                     
-                    Text("Memorable Title")
+                    Text("Title")
                         .fontWeight(.bold)
                         .italic()
                 }
@@ -54,7 +56,7 @@ struct CreateMemory: View{
                         
                     } header: {
                         
-                        Text("Moment Happened")
+                        Text("Date")
                             .fontWeight(.bold)
                             .italic()
                         
@@ -80,10 +82,9 @@ struct CreateMemory: View{
                                         Image(systemName: "plus")
                                             .font(.largeTitle)
                                             .frame(width: 100, height: 100, alignment: .center)
-                                            .background(Color.white)
+                                            .background(scheme == .dark ? Color.gray.opacity(0.2) : Color.white)
+                                            .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
                                             .cornerRadius(10)
-                                        
-                           
                                             .foregroundColor(.primary)
                                          
                                          
@@ -92,13 +93,14 @@ struct CreateMemory: View{
                                     Image(uiImage: UIImage(data: imageData)!)
                                         .resizable()
                                         .aspectRatio(contentMode: .fill)
+                                        .cornerRadius(10)
                                 }
                                 
                             }
-                            .frame(height: 200)
                             .cornerRadius(10)
                             .shadow(radius: 2)
                             .padding(.top,8)
+                            .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.5), radius: 3, x: 2, y: 2)
                         }
                         .frame(maxWidth: .infinity,alignment: .center)
                         
@@ -107,7 +109,7 @@ struct CreateMemory: View{
                 } header: {
                     
                     Toggle(isOn: $isImage) {
-                        Text("Memorable Pic?")
+                        Text("Do you want to add a photo？")
                             .fontWeight(.bold)
                             .italic()
                         
@@ -119,26 +121,26 @@ struct CreateMemory: View{
                     
                     TextEditor(text: $content)
                         .background(
-                            
                             Text("....")
                                 .foregroundColor(.gray)
                                 .opacity(content == "" ? 0.7 : 0)
                                 .offset(x: 2)
-                            
                             ,alignment: .leading
                         )
+                     
                     
                 } header: {
                     
-                    Text("Describe the Moment")
+                    Text("Comment")
                         .fontWeight(.bold)
                         .italic()
                     
                 }
                 
             }
+            .keyboardObserving()
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Save Your Memories")
+            .navigationTitle("投稿画面")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 

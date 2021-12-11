@@ -25,6 +25,7 @@ struct CardView: View {
                                 .scaledToFill()
                                 .frame(width:100, height: 80)
                                 .cornerRadius(9)
+                                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 9, x: 1, y: 1)
                         
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
@@ -38,6 +39,7 @@ struct CardView: View {
                         .font(.system(.callout, design: .default))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
+                        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 1, x: 2, y: 2)
                     Rectangle()
                           .foregroundColor(Color.primary.opacity(0.05))
                           .frame(height: 2)
@@ -45,9 +47,7 @@ struct CardView: View {
                         .font(.system(.footnote, design: .default))
                         .foregroundColor(Color.primary.opacity(0.5))
                         .italic()
-        
-                    
-                    
+  
                 } //: VSTACK
             } //: VSTACK
             .foregroundColor(.primary)
