@@ -32,20 +32,7 @@ struct CreateMemory: View{
         NavigationView{
             
             List{
-                
-                Section {
-
-                    TextField("....", text: $title)
-             
-                } header: {
-                    
-                    Text("Title")
-                        .fontWeight(.bold)
-                        .italic()
-                }
-                
-                
-                
+            
                 if memory == nil{
                     
                     Section {
@@ -116,6 +103,17 @@ struct CreateMemory: View{
                     }
                 }
                 .listRowBackground(Color.clear)
+                
+                Section {
+
+                    TextField("....", text: $title)
+             
+                } header: {
+                    
+                    Text("Title")
+                        .fontWeight(.bold)
+                        .italic()
+                }
                 
                 Section {
                     

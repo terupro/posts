@@ -27,12 +27,12 @@ class HomeViewModel: ObservableObject {
     
     func verifyPassword(){
                 
-        alertTF(message: "ロックを解除するにはパスワードを入力してください。", title: "Enter Password", hint: "123456") {[self] txt in
+        alertTF(message: "パスワードを入力してください。", title: "Enter Password", hint: "123456") {[self] txt in
             
             if txt == password{
                 
                 if firstTimeCheck{
-                    alertMsg = "Postsへようこそ。\n思い出をたくさん記録しましょう！"
+                    alertMsg = "Postsへようこそ。\n好きな写真を自由に投稿していきましょう！"
                     showAlert.toggle()
                     hapticImpact.impactOccurred()
                 }
