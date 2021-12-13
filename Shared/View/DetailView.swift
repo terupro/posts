@@ -10,9 +10,8 @@ import SwiftUI
 
 struct DetailView: View {
     var memory: Memory
+    
     var body: some View {
-        
-        
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 20) {
                 
@@ -23,7 +22,6 @@ struct DetailView: View {
                             .aspectRatio(contentMode: .fill)
                     }
                 }
-                
                 VStack(alignment: .leading, spacing: 16){
                     VStack(alignment: .leading, spacing: 10) {
                         Text("#date ")
@@ -32,13 +30,11 @@ struct DetailView: View {
                             .underline()
                         Text(memory.timestamp ?? Date(),style: .date)
                     }
-                    
                     VStack(alignment: .leading, spacing: 10) {
                         Text("#comment ")
                             .font(.system(size: 20, weight: .bold, design: .serif))
                             .italic()
                             .underline()
-                        
                         Text(memory.content ?? "")
                             .lineSpacing(1)
                     }
@@ -47,7 +43,6 @@ struct DetailView: View {
                 .frame(maxWidth:.infinity, alignment: .leading)
             } //: VSTACK
             .navigationBarTitle(Text(memory.title ?? ""),displayMode: .inline)
-            
         } //: SCROLL
         .background(MotionAnimationView().edgesIgnoringSafeArea(.all))
         .background(Color.primary.opacity(0.05))

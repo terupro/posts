@@ -21,7 +21,6 @@
 		ADEA525A26C447900093C3B5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA525926C447900093C3B5 /* Home.swift */; };
 		ADEA525F26C44AC90093C3B5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEA525E26C44AC90093C3B5 /* CloudKit.framework */; };
 		DE5295C12762D537000574B3 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5295C02762D537000574B3 /* MotionAnimationView.swift */; };
-		DEBF3B5627642F0300827042 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = DEBF3B5527642F0300827042 /* KeyboardObserving */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +49,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADEA525F26C44AC90093C3B5 /* CloudKit.framework in Frameworks */,
-				DEBF3B5627642F0300827042 /* KeyboardObserving in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +135,6 @@
 			);
 			name = "Posts (iOS)";
 			packageProductDependencies = (
-				DEBF3B5527642F0300827042 /* KeyboardObserving */,
 			);
 			productName = "Reminisce (iOS)";
 			productReference = ADEA520826C444D60093C3B5 /* Posts.app */;
@@ -168,7 +165,6 @@
 			);
 			mainGroup = ADEA51F826C444D50093C3B5;
 			packageReferences = (
-				DEBF3B5427642F0300827042 /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
 			);
 			productRefGroup = ADEA520926C444D60093C3B5 /* Products */;
 			projectDirPath = "";
@@ -417,25 +413,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DEBF3B5427642F0300827042 /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nickffox/KeyboardObserving.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DEBF3B5527642F0300827042 /* KeyboardObserving */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DEBF3B5427642F0300827042 /* XCRemoteSwiftPackageReference "KeyboardObserving" */;
-			productName = KeyboardObserving;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ADEA51FE26C444D50093C3B5 /* Reminisce.xcdatamodeld */ = {

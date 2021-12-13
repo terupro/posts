@@ -12,21 +12,14 @@ class HomeViewModel: ObservableObject {
     // Lock Status
     @Published var showAlert: Bool = false
     @Published var alertMsg: String = ""
-    
-
     @Published var isUnlocked: Bool = false
-    
     @AppStorage("isLocked") var isLockEnabled: Bool = false
     @AppStorage("lockPassword") var password: String = ""
-    
     
     // To Avoid asking password immediatly after setting password....
     @Published var firstTimeCheck: Bool = false
     let hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
-    
-    
     func verifyPassword(){
-                
         alertTF(message: "パスワードを入力してください。", title: "Enter Password", hint: "123456") {[self] txt in
             
             if txt == password{
@@ -45,9 +38,7 @@ class HomeViewModel: ObservableObject {
             }
         }
     }
-    
     func turnOnPassword(){
-        
         if isLockEnabled{
             isLockEnabled = false
             isUnlocked = false
@@ -59,9 +50,7 @@ class HomeViewModel: ObservableObject {
             setPassword()
         }
     }
-    
     func setPassword(){
-        
         alertTF(message: "パスワードを設定してください。", title: "Set Password", hint: "123456") {[self] txt in
             
             if txt == ""{
@@ -74,8 +63,7 @@ class HomeViewModel: ObservableObject {
                 firstTimeCheck = true
             }
         }
-    }
-    
+    }    
     func alertTF(message: String,title: String,hint: String,completion: @escaping (String)->()){
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

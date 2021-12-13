@@ -12,11 +12,8 @@ struct ContentView: View {
 
     // Lock Status...
     @AppStorage("isLocked") var isLockEnabled: Bool = false
-    
     @StateObject var homeData = HomeViewModel()
 
-
-    
     var body: some View {
  
         ZStack{
@@ -28,6 +25,7 @@ struct ContentView: View {
                     .navigationTitle("Posts")
 
             }
+            
             .navigationViewStyle(.stack)
             
             if isLockEnabled && !homeData.isUnlocked{
@@ -75,3 +73,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

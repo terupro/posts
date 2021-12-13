@@ -11,18 +11,18 @@ import PhotosUI
 import LocalAuthentication
 
 struct Home: View {
-    
-    @Environment(\.colorScheme) var scheme
+    @State var currentMemory: Memory?
     @State var createMemory = false
     
     // Memories.....
     @FetchRequest(entity: Memory.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Memory.timestamp, ascending: false)], animation: .easeInOut) var results : FetchedResults<Memory>
     
     @Environment(\.managedObjectContext) var context
+    @State private var flag = true
     
-    @State var currentMemory: Memory?
-
     @EnvironmentObject var homeData: HomeViewModel
+    
+   
     
     // Lock Status
     @AppStorage("isLocked") var isLockEnabled: Bool = false
@@ -33,12 +33,9 @@ struct Home: View {
         ScrollView(.vertical, showsIndicators: false) {
             
             VStack{
-                
                 ForEach(results){memory in
-                    
                     CardView(memory: memory)
                         .contextMenu {
-                            
                             Button("Delete"){
                                 context.delete(memory)
                                 try? context.save()
@@ -71,12 +68,10 @@ struct Home: View {
             }
         })
         .overlay(
-        
+            
             Button(action: {
                 hapticImpact.impactOccurred()
                 createMemory.toggle()
-                
-                
             }, label: {
                 
                 Image(systemName: "goforward.plus")
@@ -84,10 +79,9 @@ struct Home: View {
                     .padding(13)
                     .background(Color.primary)
                     .clipShape(Circle())
-                    .foregroundColor(scheme == .dark ? .black : .white)
-                    .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
+                    .foregroundColor(.black)
             })
-            .padding()
+                .padding()
             
             ,alignment: .bottomTrailing
         )
@@ -106,3 +100,8 @@ struct Home_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+
+

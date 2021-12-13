@@ -10,8 +10,6 @@ import SwiftUI
 @main
 struct ReminisceApp: App {
     let persistenceController = PersistenceController.shared
-
-
     var body: some Scene {
         WindowGroup {
             ContentView()
